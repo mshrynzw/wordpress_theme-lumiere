@@ -1,0 +1,35 @@
+---
+description: LUMIÈRE プロジェクトの共通コンテキストと参照文書
+alwaysApply: true
+---
+
+# LUMIÈRE プロジェクト
+
+LUMIÈRE は WordPress テーマ開発プロジェクトです。詳細な共通規則はリポジトリルートの `AGENTS.md` を参照してください。テーマ形式（クラシック／ブロック）は未確定です。
+
+## 現在の環境
+
+- ローカル開発: Local
+- WordPress: 7.1.3
+- PHP: 8.2.29
+- Web サーバー: nginx
+- データベース: MySQL 8.4.0
+- テーマ本体: `theme/lumiere/`（Local のテーマディレクトリにジャンクション接続済み）
+
+## ディレクトリ
+
+- `theme/lumiere/`: テーマ本体
+- `design-mockup/`: Claude が作る静的デザインモックアップ
+- `docs/`: 共有設計・タスク・レビュー文書
+- `scripts/`: 開発・検査用スクリプト
+- `tests/`: 自動テスト
+- `.cursor/rules/`: Cursor Agent 向けルール
+
+## 作業前に読む文書
+
+- `AGENTS.md`: Codex CLI と Cursor Agent の共通ルール
+- `docs/README.md`: 文書構成、更新方針、情報の優先順位
+- `docs/tasks/README.md` と該当タスク文書: タスクの進め方と受け入れ条件
+- 該当する設計書、判断記録、レビュー記録
+
+AI 間の会話共有を前提にせず、リポジトリ内の文書を共通情報源として扱ってください。不明な要件は推測で確定せず、人間に確認してください。
